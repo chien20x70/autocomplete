@@ -1,0 +1,107 @@
+
+.invisible{
+    display: none;
+}
+.content{
+     
+}
+
+.content .field{
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    height: 40px;
+    width: 240px;
+    display: flex;
+    align-items: center;
+}
+
+.field input{
+    height: 40px;
+    width: 200px;
+    outline: none;
+    border: 1px solid #bbb;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+.field .btn{
+    height: 40px;
+    width: 40px;
+    outline: none;
+    border: 1px solid #bbb;
+    margin-left: -1px;
+}
+
+.field:hover input{
+    border-color: #019165;
+}
+
+input:focus{
+    border-color: #019165;
+}
+
+.field:hover .btn{
+    border-color: #019165;
+}
+
+.field.error input, .field.error .btn{
+    border-color: red;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    width: 240px;
+    height: 120px;
+    position: absolute;
+    top: 145px;
+    left: 100px;
+  }
+  
+  /* Style the list items */
+  ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 10px 8px 10px 40px;
+    list-style-type: none;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+  }
+  
+  ul li:nth-child(odd) {
+    background: #f9f9f9;
+  }
+  
+  ul li:hover {
+    background: #ddd;
+  }
+
+  ul li.hover {
+    background: #ddd;
+  }
+  
+  ul li.checked {
+    background: #019165;
+    color: #fff;
+  }
+  
+  /* Add a "checked" mark when clicked on */
+  ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+  }
+  
+  .btnFocus{
+    border-color: #019165 !important;
+}
+
+
